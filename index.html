@@ -3,154 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="index.css"/>
     <script src="https://kit.fontawesome.com/bfda6b8c6b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" media="screen" href="screen.css">
 </head>
 <body>
-    <div>
-        <div class="home-container" id="home">
-            <nav class="nav-container">
-                <img class="logo-img" src="https://res.cloudinary.com/dprymkyqv/image/upload/v1704279348/Black_White_Minimalist_Logo_dehlz8.png"/>
-                <div class="nav-items">
-                    <a class="anchor" href="#home"><p class="prg">Home</p></a>
-                    <a class="anchor" href="#about"><p class="prg">About Me</p></a>
-                    <a class="anchor" href="#education"><p class="prg">Education</p></a>
-                    <a class="anchor" href="#contact"><p class="prg">Contact</p></a>
-                </div>
-                <div class="nav-items-small">
-                    <a class="anchor" href="#home"><p class="prg">Home</p></a>
-                    <a class="anchor" href="#about"><p class="prg">About Me</p></a>
-                </div>
-            </nav>
-            <div class="home-content">
-                <p class="hi">Hi! I am</p>
-                <h1 class="name">KUMAR GANTYADA</h1>
-                <p class="passion"><span class="i">I am a </span>MERN Stack Developer</p>
-            </div>
+<div class="container">
+    <div class="calculator">
+        <div class="display">
+            <input class="place" type="text" id="inputId" placeholder="0"/>
         </div>
-        <div class="about-container" id="about">
-            <div class="about-items">
-                <a class="anchor1" href="#home"><p class="prg1">Home</p></a>
-                <a class="anchor1" href="#education"><p class="prg1">Education</p></a>
-                <a class="anchor1" href="#contact"><p class="prg1">Contact</p></a>
-            </div>
-            <div>
-                <div class="about-flex">
-                    <div class="order-about">
-                    <h1 class="about-heading">About Me</h1>
-                    <p class="about-passion">An aspring MERN Stack Developer.Core strengths include Coding, JavaScript, <br/>
-                    Python, React JS. I'm a eager learner and I have good <br />
-                    problem-solving skills.<br /></p>
-                    <ul class="ul-list">       
-                    <li class="about-name">Name : <span class="span-name">Kumar Gantyada</span></li>
-                    <li class="about-age">Date Of Birth : <span class="span-age">19-July-2001</span></li>
-                    <li class="about-adress">Address : <span class="span-address">Andra Pradesh, Srikakulam</span></li>
-                    <a href="https://drive.google.com/file/d/1vVTPiH_kbsccHVwzDp-Cos2vK9ng_unF/view?usp=drivesdk " target="_blank"><button>Click here view to Resume</button></a>
-                </ul>  
+            <div class="media">
+                <div>
+                    <button class="operator">AC</button>
+                    <button class="operator">
+                        DEl
+                    </button>
+                    <button class="operator">%</button>
+                    <button class="operator">/</button>
                 </div>
-                 <div>
-                    <img class="self-img" src="https://res.cloudinary.com/dprymkyqv/image/upload/v1704098910/IMG-20240101-WA0011_wgnppt.jpg">
-                 </div>
-            </div>
+                <div>
+                    <button id="numberId" type="button">7</button>
+                    <button id="numberId" type="button">8</button>
+                    <button id="numberId" type="button">9</button>
+                    <button id="numberId" class="operator">*</button>
+                </div>
+                <div>
+                    <button type="button">4</button>
+                    <button type="button">5</button>
+                    <button type="button">6</button>
+                    <button class="operator">-</button>
+                </div>
+                <div>
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button class="operator">+</button>
+                </div>
+                <div>
+                    <button type="button">00</button>
+                    <button type="button">0</button>
+                    <button class="button">.</button>
+                    <button class="equal">=</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-<div class="education-container" id="education">
-    <div class="about-items">
-        <a class="anchor1" href="#home"><p class="prg1">Home</p></a>
-        <a class="anchor1" href="#Contact"><p class="prg1">Contact</p></a>
-    </div>
-    <div class="e-flex">
-        <div>
-            <h1 class="e-heading">Education</h1>
-        <div class="degree-flex">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="i-prg">Intermediate(M P C) - 2019</p>
-        </div>
-        <p class="e-prg">Sri Rama Junior College</p>
-        <p class="e-prg">CGPA : 6.70</p>
-        <div class="degree-flex">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p class="i-prg">Bachelor of Science (Computer Science) - 2023</p>
-        </div>
-        <p class="e-prg">Dr.B.R. Ambedkar University</p>
-        <p class="e-prg">H.P.N. Degree College</p>
-        <p class="e-prg">CGPA : 7.20</p>
-    </div>
-        <div>
-            <h1 class="skill-heading">Skills</h1>
-            <div class="s-flex">
-            <div class="s-flex">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="s-flex">
-                <i class="fa-brands fa-css3"></i>
-                <p>CSS</p>
-            </div>
-            <div class="s-flex">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
-            </div>
-                <div class="s-flex">
-                    <i class="fa-brands fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="s-flex">
-                    <i class="fa-solid fa-database"></i>
-                    <p>SQLite</p>
-                </div>
-                <div class="s-flex">
-                    <i class="fa-brands fa-node"></i>
-                    <p>Node JS</p>
-                </div>
-                <div class="s-flex">
-                    <i class="fa-brands fa-react"></i>
-                    <p>React JS</p>
-                </div>
-            </div>
-            <div>
-                <h1 class="project-heading">Projects</h1>
-                <div class="white-color">
-                    <p class="t-prg">TODOS APPLICATION</p>
-                    <p>A comprehensive todo management tool designed to enhance productivity.
-                    </p>
-                    <ul>
-                    <li class="li">User-friendly interface with HTML, CSS, and Bootstrap for easy of use</li>
-                    <li class="li">Effortless task management through JavaScript-based CRUD operations with dynamic UI updates</li>
-                    <li>Your tasks are always safe with local storage methods to ensure task persistence.</li>
-                    </ul>
-                    <p class="t-prg">Technologies used: HTML, CSS, JS, Bootstrap</p> 
-                </div>
-            </div>
-        </div>
-    </div>    
-</div>
-<div class="contact-container" id="contact">
-    <div class="c-flex">
-        <i class="fa-solid fa-envelope"></i>
-        <p class="mail">gantyadakumar2662@gmail.com</p>
-        <i class="fa-solid fa-square-phone"></i>
-        <p class="number">+91 9849013871</p>
-        <a href="https://www.linkedin.com/in/kumar-gantyada-a9b560251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/kumarganteda?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-    </div>
-    <div class="c-flex-small">
-        <div class="mail-flex">
-            <i class="fa-solid fa-envelope"></i>
-            <i class="mail">gantyadakumar2662@gmail.com</i>
-        </div>
-        <div class="contact-flex">
-            <i class="fa-solid fa-square-phone"></i>
-            <i class="number">+91 9849013871</i>
-        </div>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/kumar-gantyada-a9b560251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/kumarganteda?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-        </div>
-    </div>
-</div> 
+    <script src="index.js"></script>
 </body>
 </html>
