@@ -1,82 +1,129 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
-}
 .container{
-    width: 100%;
+    background-color: rgb(63, 63, 233);
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
+}
+p{
+    cursor: pointer;
+}
+.white-card{
     height: 100%;
-    padding: 50px;
-    background: linear-gradient(rgb(9, 8, 8), rgb(73, 72, 72));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.calculator{
-    background: black;
-    padding: 10px;
-    box-shadow: 0px 15px 15px 8px;
+    background-color: white;
+    padding: 5px;
     border-radius: 10px;
+    box-shadow: -10px -10px 10px 10px;
+    margin-top: 20px;
 }
-button{
-    padding: 20px;
-    margin: 10px;
-    width: 60px;
+.bg-image{
+    background-image: url("https://res.cloudinary.com/dprymkyqv/image/upload/v1702703412/cld-sample-2.jpg");
+    height: 40vh;
+    width: 90vw;
+    background-size: cover;
+    padding: 30px;
     border-radius: 20px;
-    font-size: 15px;
-    background-color: rgb(37, 36, 36);
-    color: white;
-    border: none;
-    box-shadow: -3px -3px 15px rgb(55, 55, 55), 1px -2px 5px rgb(55, 55, 55);
-    background: transparent;
+    box-shadow: -5px -5px 15px 15px;
+    margin-left: 5vh;
+}
+.img1{
+    height: 40vh;
+    box-sizing: border-box;
+    box-shadow: -5px -5px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;  
+}
+img{
+    margin-left: 10vh;
+}
+.img2{
+    height: 40vh;
+    box-sizing: border-box;
+    box-shadow: -5px -5px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;  
+}
+.img3{
+    height: 40vh;
+    box-sizing: border-box;
+    box-shadow: -5px -5px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.india-gate{
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    margin-right: 10px;
+}
+.goa{
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    margin-right: 10px;
+}
+.Araku{
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    margin-right: 10px;
+}
+i{
+    margin-top: 20px;
     cursor: pointer;
     font-weight: bold;
 }
-.display{
-    box-shadow: 4px 2px 10px rgb(55, 54, 54), 3px -1px 2px rgb(55, 54, 54);
+.flex-location{
+    display: flex;
 }
-input{
-    padding: 30px;
-    width: 100%;
-    font-size: 20px;
-    border-radius: 10px;
-    background: transparent;
-    border: none;
-    color: #ffffff;
-    text-align: right;
-}
-.media{
-    margin-top: 20px;
-}
-.operator{
-    color: rgb(79, 72, 133);
-    background-color: rgb(219, 218, 228);
-    box-shadow: 1px 2px 5px rgb(117, 183, 238), 1px 2px 2px rgb(93, 179, 225);
-}
-.equal{
-    background-color: orangered;
-    font-size: 35px;
-    box-shadow: -1px -2px -5px rgb(117, 183, 238);
+
+a{
+    text-decoration: none;
 }
 @media screen and (max-width:450px) {
-    button{
-        font-size: 15px;
-    }
     .container{
-        padding: 20px;
+        background-color: rgb(63, 63, 233);
+        height: 100%;
+        width: 100%;
+        padding: 40px;
     }
-    .calculator{
+    .bg-image{
+        background-image: url("https://res.cloudinary.com/dprymkyqv/image/upload/v1702703412/cld-sample-2.jpg");
+        height: 65vh;
+        width: 60vw;
+        background-size: cover;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: -5px -5px 15px 15px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        height: 20vh;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .img2{
+        height: 20vh;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .img3{
+        height: 20vh;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .white-card{
         height: 100%;
     }
-    .media{
-        margin-top: 100px;
+    .india-gate{
+        margin-bottom: 30px;
     }
-    input{
-        padding: 70px;
-        font-size: 40px;
-        display: flex;
-        justify-content: flex-end;
-        text-align: right;
-    }
+    
 }
